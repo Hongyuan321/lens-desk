@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>映务台 · 器材借还与缺件复核</title><link rel="stylesheet" href="style.css"><script defer src="workflow.js"></script><script defer src="app.js"></script></head>
+<body><header><div class="brand"><b class="lens" aria-hidden="true">◎</b><strong>映务台</strong><span>器材交接工作台</span></div><span>吴宏远 · 课程原型</span></header>
+<main><div class="intro"><div><p class="eyebrow">器材管理 / 值班工作台</p><h1>器材交接</h1><p>按套装登记借用，逐项清点归还，追踪每一次缺件复核。</p></div><a href="docs/fieldwork.html">查看业务材料 ↗</a></div>
+<div id="metrics" class="metrics" aria-label="库存统计"></div>
+<div class="workspace"><section class="panel"><div class="panelhead"><h2>器材台账</h2><span class="muted">演示库存</span></div><label class="filter">筛选状态<select id="filter"><option value="">全部状态</option><option value="ready">可借</option><option value="out">借出中</option><option value="review">待复核</option></select></label><div id="list"></div></section>
+<section class="panel detail" id="detail" aria-label="器材详情"></section></div>
+<p id="message" role="status" aria-live="polite"></p>
+</main><footer>校园影像器材借还与缺件复核 <span>合成演示数据 · 保存在当前浏览器</span></footer></body></html>
